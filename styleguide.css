@@ -5,13 +5,65 @@
 --orange: rgba(231, 119, 39, 1);
 --yellow: rgba(231, 153, 45, 1);
 
---font-size-xs: 
---font-size-s:
---font-size-m:
---font-size-l:
---font-size-xl:
---font-size-xxl:
---font-size-xxxl:
+--font-size-xs: 0.8rem;
+--font-size-s: 1rem;
+--font-size-m: 1.25rem;
+--font-size-l:1.563rem;
+--font-size-xl:1.953rem;
+--font-size-xxl:2.441rem;
+--font-size-xxxl:3.052rem;
 
 
 }
+/* Dharma Gothic C Regular
+font-family: "dharma-gothic-c", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Dharma Gothic C Regular Italic
+font-family: "dharma-gothic-c", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Dharma Gothic C Bold
+font-family: "dharma-gothic-c", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Dharma Gothic C Bold Italic
+font-family: "dharma-gothic-c", sans-serif;
+font-weight: 700;
+font-style: italic;
+Dharma Gothic E Regular
+font-family: "dharma-gothic-e", sans-serif;
+font-weight: 400;
+font-style: normal;
+Dharma Gothic E Regular Italic
+font-family: "dharma-gothic-e", sans-serif;
+font-weight: 400;
+font-style: italic;
+Dharma Gothic E Bold
+font-family: "dharma-gothic-e", sans-serif;
+font-weight: 700;
+font-style: normal;
+Dharma Gothic E Bold Italic
+font-family: "dharma-gothic-e", sans-serif;
+font-weight: 700;
+font-style: italic; 
+
+Lemon Sans Next Regular
+font-family: "lemon-sans-next", sans-serif;
+font-weight: 400;
+font-style: normal;
+Lemon Sans Next Regular Italic
+font-family: "lemon-sans-next", sans-serif;
+font-weight: 400;
+font-style: italic;
+Lemon Sans Next Bold
+font-family: "lemon-sans-next", sans-serif;
+font-weight: 700;
+font-style: normal;
+Lemon Sans Next Bold Italic
+font-family: "lemon-sans-next", sans-serif;
+font-weight: 700;
+font-style: italic;*/
