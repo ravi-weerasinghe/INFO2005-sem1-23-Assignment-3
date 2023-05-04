@@ -1,4 +1,4 @@
-
+/* Flex box for the top half of the product page */
 .single-product-container{
     display: flex;
     flex-flow: wrap;
