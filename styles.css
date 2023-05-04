@@ -18,3 +18,16 @@ li {
     font-style: normal;
     font-size: xx-large;
 }
+
+.single-product-container{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.single-product-container > div {
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+  }
+
