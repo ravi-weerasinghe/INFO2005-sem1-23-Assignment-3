@@ -2,3 +2,36 @@
 .homepage-books{
 background-color: var(--green);
 }
+
+/*
+current classes
+for navbar:
+.dropdown , .dropbtn , .dropdown-content
+
+for logo:
+.logo
+
+for homepage:
+text at the beginning: .homepage
+for new release books: .homepage-books , .homepage-books-container
+hierarchy of book titling: 
+                    <h2> book name </h2>
+                    <h3> author name </h3>
+                    <h4> price </h4>
+                    <button> add to cart </button>
+for category books : .homepage-books, .homepage-category-container
+
+for fiction page:
+fiction title and description : .description
+category books : .books , .fiction-container
+
+queer fiction page:
+ queer fiction title and description : .description
+ books : .books, .books-container
+
+single product page:
+product : .single-product, .single-product-container
+you may like: .suggestion-books
+
+
+
