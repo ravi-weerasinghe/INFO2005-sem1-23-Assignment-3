@@ -1,28 +1,36 @@
-.topnav {
-    position: relative;
-    background-color: grey;
+#topnav {
     overflow: hidden;
+    background-color: grey; /* Test colour needs to be changed*/ 
+    padding: 90px 10px;
+    position: fixed;
+    transition: 0.4s;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 }
 
-.topnav a{
+#topnav a{
     float: left;
-    color: #f2f2f2;
+    color: #f2f2f2; /* temp colour needs to be changed*/ 
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px;
     text-decoration: none;
-    font-size: var(--font-size-s);
+    font-size: 7px;
+    line-height: 17px;
+    border-radius: 4px;
 
 }
 
-.topnav a:hover{
+#topnav a:hover{
     color: var(--red);
 }
 
-.topnav a.split-right{
+#topnav a.split-right{
     float: right;
 }
 
-.split-middle a{
+/* logo middle css */ 
+#topnav #logo{ 
     float: none;
     position: absolute;
     top: 50%;
@@ -31,14 +39,49 @@
     font-family: "alta-california", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: var(--font-size-xxl);
-
-
-
+    font-size: 40px;
+    transition: 0.4s;
 }
  
-.topnav a.active{
+#topnav a.active{
     background-color: white;
     color: var(--red);
 
 }
+
+#footer-tagline{
+    text-align: center;
+    font-size: 7px;
+    padding: 3px;
+
+}
+/* Footer  as flex box*/ 
+.site-footer{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: rgb(226, 226, 226) ;
+
+}
+
+.site-footer #text{
+    flex-grow: 1;
+    font-family: "alta-california", sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+
+
+}
+.site-footer #footer-img{
+    padding: 20px;
+    flex-grow: 10;
+    align-items: right;
+    
+    
+}
+.site-footer #footer-img>img{
+    width: 20px;
+}
+
+
