@@ -1,20 +1,44 @@
-nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.topnav {
+    position: relative;
+    background-color: grey;
+    overflow: hidden;
 }
 
-li {
-    display: inline;
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-s);
+
 }
 
-.navbar{
-
+.topnav a:hover{
+    color: var(--red);
 }
 
-.logo{
+.topnav a.split-right{
+    float: right;
+}
+
+.split-middle a{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "alta-california", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: var(--font-size-xxl);
+
+
+
+}
+ 
+.topnav a.active{
+    background-color: white;
+    color: var(--red);
+
 }
