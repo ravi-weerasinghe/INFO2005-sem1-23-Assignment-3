@@ -13,9 +13,12 @@
 --font-size-xxl:2.441rem;
 --font-size-xxxl:3.052rem;
 
-
 }
-/* Dharma Gothic C Regular
+
+/*\
+ADD LETTER SPACING 1PX TO ALL DHARMA GOTHIC
+
+Dharma Gothic C Regular
 font-family: "dharma-gothic-c", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -39,14 +42,17 @@ Dharma Gothic E Regular
 font-family: "dharma-gothic-e", sans-serif;
 font-weight: 400;
 font-style: normal;
+
 Dharma Gothic E Regular Italic
 font-family: "dharma-gothic-e", sans-serif;
 font-weight: 400;
 font-style: italic;
+
 Dharma Gothic E Bold
 font-family: "dharma-gothic-e", sans-serif;
 font-weight: 700;
 font-style: normal;
+
 Dharma Gothic E Bold Italic
 font-family: "dharma-gothic-e", sans-serif;
 font-weight: 700;
@@ -56,14 +62,17 @@ Lemon Sans Next Regular
 font-family: "lemon-sans-next", sans-serif;
 font-weight: 400;
 font-style: normal;
+
 Lemon Sans Next Regular Italic
 font-family: "lemon-sans-next", sans-serif;
 font-weight: 400;
 font-style: italic;
+
 Lemon Sans Next Bold
 font-family: "lemon-sans-next", sans-serif;
 font-weight: 700;
 font-style: normal;
+
 Lemon Sans Next Bold Italic
 font-family: "lemon-sans-next", sans-serif;
 font-weight: 700;
