@@ -8,6 +8,7 @@ background-color: var(--green);
     text-align:center;
     margin-right: 20px;
     vertical-align: auto;
+    padding-left: 1vw;
 }
 .book img{
     width: 140px;
