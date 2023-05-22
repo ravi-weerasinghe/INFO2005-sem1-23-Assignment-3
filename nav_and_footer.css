@@ -1,6 +1,6 @@
 #topnav {
     overflow: hidden;
-    background-color: grey; /* Test colour needs to be changed*/ 
+    background-color: grey; /* temp colour needs to be changed*/ 
     padding: 90px 10px;
     position: fixed;
     transition: 0.4s;
@@ -30,7 +30,12 @@
     float: right;
 }
 #topnav .split-right{
-    padding: 10px;
+    padding: 12px;
+}
+
+#topnav #search-icon{
+    width: 8px;
+    align-items: center;
 }
 
 
