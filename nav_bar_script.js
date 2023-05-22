@@ -1,3 +1,4 @@
+// Make the nav bar smaller when scrolling
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
