@@ -2,7 +2,109 @@
 .homepage-books{
 background-color: var(--green);
 }
+.book{
+    display: inline-block;
+    width: 200px;
+    text-align:center;
+    margin-right: 20px;
+    vertical-align: auto;
+}
+.book img{
+    width: 140px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.book >h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--yellow);
+    margin-bottom: 2px;
+}
+.book > h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--font-size-xs);
+    color: var(--yellow);
+    margin-bottom: 2px;
+}
+.book > h4{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--orange);
+    margin-bottom:2px;
+}
+.book > button{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    outline: none;
+    margin-bottom: 10px;
+}
+.book >button:hover{
+    background-color: var(--darkorange);
+}
+.book >button:active{
+    background-color: var(--darkorange);
+    transform: scale(0.95);
+}
 
+.homepage-books > h2{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-xl);
+    letter-spacing: 1px;
+    color: var(--yellow);
+}
+.homepage-subscribe > h2{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-xxl);
+    letter-spacing: 1px;
+    color: var(--green);
+}
+.homepage-subscribe > p{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+}
+.homepage-subscribe > button{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    background-color: var(--green);
+    color: white;
+    text-align: center;
+    font-size: var(--font-size-s);
+    outline: none;
+    margin-bottom: 10px;
+}
+.homepage> p{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--red);
+
+}
+.homepage> img{
+    width:;
+    height: ;
+}
 /*
 current classes
 for navbar:
