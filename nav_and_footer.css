@@ -1,24 +1,25 @@
 #topnav {
     overflow: hidden;
-    background-color: grey; /* temp colour needs to be changed*/ 
+    background-color: rgb(236, 236, 236); 
     padding: 10px 10px;
     position: fixed;
     transition: 0.4s;
     width: 100%;
     top: 0;
     z-index: 99;
+
 }
 
 #topnav a{
     float: left;
-    color: #f2f2f2; /* temp colour needs to be changed*/ 
+    color: var(--red);
     text-align: center;
     padding: 2vw;
     text-decoration: none;
     font-size: 1.1vw;
     line-height: 17px;
     border-radius: 4px;
-
+    font-family: "lemon-sans-next", sans-serif;
 }
 
 #topnav a:hover{
@@ -78,7 +79,7 @@
     font-size: 1.1vw;  
     border: none;
     outline: none;
-    color: white;
+    color: var(--red);
     padding: 2vw;
     background-color: inherit;
     font-family: inherit;
@@ -116,13 +117,16 @@
 
 
 
-/* Footer  as flex box*/ 
+/* Footer */
 #footer-tagline{
     font-family: "lemon-sans-next", sans-serif;
     font-size: 1vw;
     padding: 2vw;
 }
-
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
 .footer{
     float: left;
     justify-content: center;
@@ -130,8 +134,9 @@
     height: 150px;
 }
 
-.text{
-    width:60%;
+/*-------------TEXT---------------------------------*/
+.f-text{
+    grid-column: 1/5;
     font-size: 1.5vw;
     padding-left: 3vw;
     padding-top: 20px;
@@ -139,35 +144,39 @@
     color: var(--red);
 }    
 
-.text>h1{
+.f-text>h1{
     font-family: "alta-california", sans-serif;
     font-size: 4vw;
 }  
 
-.icons{
-    width: 10%;
+/*-------------SOCIAL ICONS---------------------------------*/
+.f-icons{
     text-decoration: none;
-    justify-content: center;
+    justify-content: end;
     vertical-align: middle;
     border: none !important;
     padding-top: 4.5vw;
 }
 
-.icons>a>{
+.f-icons>a>{
     text-decoration: none;
     border: none !important;
 }
-.icons>a>img{
 
+.f-icons>a>img{
     padding:3px;
+    width: 2vw;
     text-decoration: none;
     justify-content: center;
     vertical-align: middle;
     border: none !important;
 }
+.f-icons>a>img{
+    padding:4px;
+}
 
+/*-------------LOGO---------------------------------*/
 .fimg{
-    width: 15%;
     vertical-align: middle;
     padding-top: 3vw;
 }
