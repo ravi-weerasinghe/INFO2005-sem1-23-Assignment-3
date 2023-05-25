@@ -46,7 +46,7 @@
     text-decoration: none!important;
 }
 .book>a>h2:hover{
-    color: var(--yellow-hover);
+    color: var(--yellow);
     text-decoration: none!important;
 }
 .book>a>h2:hover{
