@@ -1,12 +1,5 @@
 
-.book{
-    display: inline-block;
-    width: 200px;
-    text-align:center;
-    margin-right: 20px;
-    vertical-align: auto;
-    padding-left: 1vw;
-}
+
 .book img{
     width: 13vw;
     height: 19.76vw;
@@ -57,14 +50,48 @@
 }
 
 /*----------------------------------- BOOKS CONTAINER-------------------------------------------------*/
+/* FOR DESKTOP*/
+@media (min-width: 768px){
 .homepage-books-container{
     display:flex;
     justify-content: center;
-    height: 430px;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
+.book{
+        display: inline-block;
+        width: calc(25% - 30px);
+        text-align:center;
+        margin-right: 20px;
+        vertical-align: auto;
+        padding-left: 1vw;
+        padding: 15px;
+        box-sizing: border-box;
 
+    }
+}
+@media (max-width: 767px){
+    .homepage-books-container{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+    .book{
+            display: inline-block;
+            width: calc(50% - 20px);
+            text-align:center;
+            margin-right: 20px;
+            vertical-align: auto;
+            padding-left: 1vw;
+            padding: 5px;
+            box-sizing: border-box;
+    
+        }
+    }
 .homepage-books{
     background-color: var(--green);
+    padding: 20px 0;
 }
 
 .homepage-books > h2{
