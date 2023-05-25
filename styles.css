@@ -4,6 +4,8 @@
     width: 13vw;
     height: 19.76vw;
     margin-bottom: 5px;
+    text-decoration: none!important;
+    border: 0 !important;
 }
 .book >h2{
     font-family: "lemon-sans-next", sans-serif;
@@ -12,7 +14,45 @@
     font-size: var(--font-size-s);
     color: var(--yellow);
     margin-bottom: 2px;
+    text-decoration: none!important;
 }
+
+.book>a>h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--yellow);
+    margin-bottom: 2px;
+    text-decoration: none!important;
+}
+/* idk which of made the under line disappear and im scared to change it */
+.book>a:link{
+    text-decoration: none!important;
+}
+.book>a:visited{
+    text-decoration: none!important;
+}
+.book>a:hover{
+    text-decoration: none!important;
+}
+.book>a:hover{
+    text-decoration: none!important;
+}
+.book>a>h2:link{
+    text-decoration: none!important;
+}
+.book>a>h2:visited{
+    text-decoration: none!important;
+}
+.book>a>h2:hover{
+    color: var(--yellow-hover);
+    text-decoration: none!important;
+}
+.book>a>h2:hover{
+    text-decoration: none!important;
+}
+
 .book > h3{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 400;
@@ -20,6 +60,7 @@
     font-size: var(--font-size-xs);
     color: var(--yellow);
     margin-bottom: 2px;
+    text-decoration: none!important;
 }
 .book > h4{
     font-family: "lemon-sans-next", sans-serif;
@@ -28,6 +69,7 @@
     font-size: var(--font-size-xs);
     color: var(--orange);
     margin-bottom:2px;
+    text-decoration: none!important;
 }
 .book > button{
     font-family: "lemon-sans-next", sans-serif;

@@ -23,7 +23,7 @@
 }
 
 #topnav a:hover{
-    color: var(--red);
+    color: var(--red); /*change needed */
     transition:0.4s ;
 }
 
@@ -91,7 +91,7 @@
   
   .dropdown-content {
     display: none;
-    position: 10px;
+    position: 70px;
     background-color: #f9f9f9;
     min-width: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
