@@ -1,18 +1,24 @@
 :root{
 --green: rgba(23, 88, 75, 1);
+
 --red: rgba(207, 42, 30, 1);
+--red-hover: rgb(151, 27, 18);
+
 --darkorange: rgba(236 , 85, 33,1);
+
 --orange: rgba(231, 119, 39, 1);
+--orange-hover: rgb(170, 84, 23);
+
 --yellow: rgba(231, 153, 45, 1);
 --yellow-hover: rgb(184, 120, 30);
 
---font-size-xs: 0.8rem;
---font-size-s: 1rem;
---font-size-m: 1.25rem;
---font-size-l:1.563rem;
---font-size-xl:1.953rem;
---font-size-xxl:2.441rem;
---font-size-xxxl:3.052rem;
+--font-size-xs: 1vw;
+--font-size-s: 2vw;
+--font-size-m: 3vw;
+--font-size-l: 5vw;
+--font-size-xl: 7vw;
+--font-size-xxl: 9vw;
+--font-size-xxxl:11vw;
 
 }
 
