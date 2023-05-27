@@ -7,17 +7,9 @@
     text-decoration: none!important;
     border: 0 !important;
 }
-.book >h2{
-    font-family: "lemon-sans-next", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: var(--font-size-s);
-    color: var(--yellow);
-    margin-bottom: 2px;
-    text-decoration: none!important;
-}
-
-.book>a>h2{
+.book>h2,
+.book> a > h2{
+    max-width: 13vw;
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -27,30 +19,16 @@
     text-decoration: none!important;
 }
 /* idk which of made the under line disappear and im scared to change it */
-.book>a:link{
-    text-decoration: none!important;
-}
-.book>a:visited{
-    text-decoration: none!important;
-}
-.book>a:hover{
-    text-decoration: none!important;
-}
-.book>a:hover{
-    text-decoration: none!important;
-}
-.book>a>h2:link{
-    text-decoration: none!important;
-}
-.book>a>h2:visited{
+.book>a:link,
+.book>a:visited,
+.book>a:hover,
+.book>a>h2:link,
+.book>a>h2:visited,
+.book>a>h2:hover{
     text-decoration: none!important;
 }
 .book>a>h2:hover{
     color: var(--yellow);
-    text-decoration: none!important;
-}
-.book>a>h2:hover{
-    text-decoration: none!important;
 }
 
 .book > h3{
@@ -90,52 +68,33 @@
     background-color: var(--darkorange);
     transform: scale(0.95);
 }
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 20px);
+    text-align:center;
+    margin-right: 20px;
+    vertical-align: auto;
+    padding-left: 1vw;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+
+}
 
 /*----------------------------------- BOOKS CONTAINER-------------------------------------------------*/
-/* FOR DESKTOP*/
-@media (min-width: 768px){
 .homepage-books-container{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
-.book{
-        display: inline-block;
-        width: calc(25% - 30px);
-        text-align:center;
-        margin-right: 20px;
-        vertical-align: auto;
-        padding-left: 1vw;
-        padding: 15px;
-        box-sizing: border-box;
-
-    }
-}
-@media (max-width: 767px){
-    .homepage-books-container{
-        display:flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 -10px;
-    }
-    .book{
-            display: inline-block;
-            width: calc(50% - 20px);
-            text-align:center;
-            margin-right: 20px;
-            vertical-align: auto;
-            padding-left: 1vw;
-            padding: 5px;
-            box-sizing: border-box;
-    
-        }
-    }
+/* homepage books section*/
 .homepage-books{
     background-color: var(--green);
     padding: 20px 0;
 }
-
 .homepage-books > h2{
     font-family: "dharma-gothic-c", sans-serif;
     font-weight: 900;
@@ -155,7 +114,9 @@
     text-decoration: none;
     color: var(--red); 
 }
+
 /*---------- SUBCRIBE-------------------------------------------------------------------*/
+
 .homepage-subscribe > h2{
     font-family: "dharma-gothic-c", sans-serif;
     font-weight: 900;
@@ -169,15 +130,16 @@
 
 .homepage-subscribe-container{
     display: grid;
-    height: 400px;
     align-content: space-around;
     grid-template-columns: auto auto;
     gap:10px;
     padding: 10px;
 }
-.homepage-subscribe-container .subsribe-image>img{
+.subsribe-image>img{
     padding-left: 4vw;
     width: 40vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 .homepage-subscribe-container .subcribe-text{
     text-align: none;
@@ -232,7 +194,6 @@ input[type=text] {
 .homepage-category-container{
     display: flex;
     justify-content: center;
-    height: 300px;
 
 }
 /*----------------------HOME PAGE INTRO ------------------------------------- */
@@ -261,36 +222,28 @@ input[type=text] {
     padding:20px;
 }
 
+/*---- Responsive adjustments ---*/
+/* FOR DESKTOP*/
+@media (min-width: 768px){
+    .book{
+        width: calc (25% -30px);
+    }
+    .homepage-category-container .book{
+        width: calc (25%-30px);
+    }
+    .homepage-intro-container #intro-text{
+        max-width: 40vw;
+    }
+    
+    }
+    /*FOR MOBILE*/
+    @media (max-width: 767px){
+        .book{
+            width: calc (50%-20px);
+        }
+        }
 
-/*
-current classes
-for navbar:
-.dropdown , .dropbtn , .dropdown-content
 
-for logo:
-.logo
-
-for homepage:
-text at the beginning: .homepage
-for new release books: .homepage-books , .homepage-books-container
-hierarchy of book titling: 
-                    <h2> book name </h2>
-                    <h3> author name </h3>
-                    <h4> price </h4>
-                    <button> add to cart </button>
-for category books : .homepage-books, .homepage-category-container
-
-for fiction page:
-fiction title and description : .description
-category books : .books , .fiction-container
-
-queer fiction page:
- queer fiction title and description : .description
- books : .books, .books-container
-
-single product page:
-product : .single-product, .single-product-container
-you may like: .suggestion-books
 
 
 
