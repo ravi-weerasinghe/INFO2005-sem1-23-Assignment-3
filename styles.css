@@ -84,14 +84,16 @@
 }
 
 /*----------------------------------- BOOKS CONTAINER-------------------------------------------------*/
-.homepage-books-container{
+.homepage-books-container,
+.fiction-books-container{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
 /* homepage books section*/
-.homepage-books{
+.homepage-books, 
+.fiction-books{
     background-color: var(--green);
     padding: 20px 0;
 }
@@ -221,7 +223,46 @@ input[type=text] {
     align-self: center;
     padding:20px;
 }
+/* -------DESCRIPTION HEADING ----*/
+.description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    padding: 50px;
+    padding-top:150px;
+}
 
+.description  h1{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--red);
+    font-size: var(--font-size-xxl);
+    margin-top: 0;    
+}
+.description  p{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--red);
+    font-size: var(--font-size-s);
+    margin-top: 20px;    
+}
+
+/* ---- PRODUCT PAGE TOP CONTAINER ----*/
+.single-product-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.single-product-container h1{
+    
+}
 /*---- Responsive adjustments ---*/
 /* FOR DESKTOP*/
 @media (min-width: 768px){
