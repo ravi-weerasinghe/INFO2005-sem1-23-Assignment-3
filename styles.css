@@ -101,7 +101,7 @@
     font-family: "dharma-gothic-c", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     letter-spacing: 1px;
     color: var(--darkorange);    
     margin-left:4vw;
@@ -114,7 +114,7 @@
 }
 .homepage-books > h2> a:hover{
     text-decoration: none;
-    color: var(--red); 
+    color: var(--yellow-hover); 
 }
 
 /*---------- SUBCRIBE-------------------------------------------------------------------*/
@@ -146,6 +146,7 @@
 .homepage-subscribe-container .subcribe-text{
     text-align: none;
     max-width: 30vw;
+    padding-top: 50px;
 }
 
 .homepage-subscribe-container .subcribe-text> p{
@@ -185,6 +186,7 @@ input[type=text] {
     box-sizing:border-box;
     border: 2px  solid var(--green);
     border-radius: 20px;
+    font-family: "lemon-sans-next", sans-serif; 
   }
   input[type=text]:focus {
     background-color: rgb(136, 205, 191);
@@ -232,10 +234,9 @@ input[type=text] {
     justify-content: center;
     height: 15vh;
     padding: 50px;
-    padding-top:150px;
 }
 
-.description  h1{
+.description>h1{
     font-family: "dharma-gothic-c", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -244,15 +245,39 @@ input[type=text] {
     font-size: var(--font-size-xxl);
     margin-top: 0;    
 }
-.description  p{
+.description>p{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     color: var(--red);
     font-size: var(--font-size-s);
+    max-width: 60vw;
     margin-top: 20px;    
 }
+/*---------BREADCRUMBS------------------------------------------------------------*/
+.bread-crumbs{
+    padding-top: 11.4vw;
+}
+.bread-crumbs>ul{
+    text-decoration:none;
+    font-family: "lemon-sans-next", sans-serif;
+    margin: 1.5vw;
+    text-decoration: none;
+}
+.bread-crumbs>ul>li{
+    display: inline;
+    color: var(--red);
+}
+.bread-crumbs>ul>li>a{
+    text-decoration:none;
+    color: var(--red);
+}
+.bread-crumbs a:hover{
+    color: var(--red-hover);
+
+}
+
 
 /* ---- PRODUCT PAGE TOP CONTAINER ----*/
 .single-product-container{
