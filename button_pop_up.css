@@ -1,0 +1,61 @@
+
+.popup {
+    display: none;
+    position: fixed; 
+    padding: 10px;
+    width: 280px; 
+    margin-left: -150px;
+    height: 180px;
+    top: 50%;
+    background: var(--green);
+    border: 3px solid var(--green-hover);
+    z-index: 20;
+    text-align: right;
+}
+.popup>h1{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-size: var(--font-size-l);
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+.popup>h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-size: var(--font-size-s);
+    color: white;
+    text-align: start;
+}
+.popup>a{
+    text-decoration: none;
+    font-family: "lemon-sans-next", sans-serif;
+    font-size: 2vw;
+    color: var(--red);
+    text-align: center;
+    padding-right: 3px;
+}
+.popup>a:hover{
+    color: var(--red-hover);
+}
+
+#popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+}
+
+#popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--green);
+    z-index: -1;
+    
+}

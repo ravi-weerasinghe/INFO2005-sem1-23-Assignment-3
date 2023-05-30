@@ -115,10 +115,9 @@
 #footer-tagline{
     font-family: "lemon-sans-next", sans-serif;
     font-size: 1vw;
-    padding: 2vw;
+    padding: 1.1vw;
     text-align: center;
     font-size: var(--font-size-xs);
-    padding: 3px;
 }
 
 .row{

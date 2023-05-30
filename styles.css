@@ -9,7 +9,7 @@
 }
 .book>h2,
 .book> a > h2{
-    max-width: 13vw;
+    max-width: 20vw;
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -169,6 +169,11 @@
     outline: none;
     margin-bottom: 10px;
 }
+.homepage-subscribe-container .subcribe-text> button:hover {
+    background-color: var(--green-hover);
+
+}
+
 
 .homepage-subscribe-container .subcribe-text> form{
     font-family: "lemon-sans-next", sans-serif;
