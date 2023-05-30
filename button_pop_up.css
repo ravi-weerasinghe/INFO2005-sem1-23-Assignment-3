@@ -6,7 +6,8 @@
     width: 280px; 
     margin-left: -150px;
     height: 180px;
-    top: 50%;
+    top: 45%;
+    left: 50%;
     background: var(--green);
     border: 3px solid var(--green-hover);
     z-index: 20;
