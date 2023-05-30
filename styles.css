@@ -6,6 +6,11 @@
     margin-bottom: 5px;
     text-decoration: none!important;
     border: 0 !important;
+    opacity: 1;
+    transition: 0.4s ease;
+}
+.book img:hover{
+    opacity: 0.7;
 }
 .book>h2,
 .book> a > h2{
@@ -26,10 +31,9 @@
 .book>a>h2:visited,
 .book>a>h2:hover{
     text-decoration: none!important;
+    color: var(--yellow-hover);
 }
-.book>a>h2:hover{
-    color: var(--yellow);
-}
+
 
 .book > h3{
     font-family: "lemon-sans-next", sans-serif;

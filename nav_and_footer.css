@@ -21,6 +21,10 @@
     border-radius: 4px;
     font-family: "lemon-sans-next", sans-serif;
 }
+#topnav i{
+    padding-left: 7px;
+
+}
 
 #topnav a:hover{
     color: var(--red-hover); 
@@ -146,6 +150,15 @@
     font-size: 4vw;
 }  
 
+.f-text>h2{
+    font-weight: bold;
+    font-family: "dharma-gothic-c", sans-serif;
+    font-size: 3.2vw;
+} 
+.f-text>h3{
+    padding-top: 10px;
+    font-size: 1.3vw;
+} 
 /*-------------SOCIAL ICONS---------------------------------*/
 .f-icons{
     text-decoration: none;
