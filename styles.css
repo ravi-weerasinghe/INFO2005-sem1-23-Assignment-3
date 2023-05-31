@@ -342,7 +342,20 @@ input[type=text] {
     padding-bottom: 1vw;
 }
 
-
+/* ---- CART ---- */ 
+.cart-book{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(25% - 30px);
+    text-align:center;
+    margin-right: 20px;
+    vertical-align: auto;
+    padding-left: 1vw;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
 
 /*---- Responsive adjustments ---*/
 /* FOR DESKTOP*/

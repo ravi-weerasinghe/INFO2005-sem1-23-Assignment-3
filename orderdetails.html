@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hares and Hyenas</title>
-    <link rel="stylesheet" href="styleguide.css" >
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style_product_page.css">
-    <link rel="stylesheet" href ="reset.css">
-    <link rel="stylesheet" href="https://use.typekit.net/mga2jcs.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hares and Hyenas</title>
+        <link rel="stylesheet" href="styleguide.css" >
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href ="reset.css">
+        <link rel="stylesheet" href ="nav_and_footer.css">
+        <link rel="stylesheet" href="padding_home_page.css">
+        <link rel="stylesheet" href="button_pop_up.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mga2jcs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="nav_bar_script.js"></script>
+        <script src="button_click.js"></script>
+    
+        <link rel="icon" type="image/x-icon" href="other_assetts/hares_icon.png">
+    
+    </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href = "">ABOUT US</a></li>
-                <li class="dropdown">
-                <a href = "" class ="dropbtn">COLLECTIONS</a>
-                    <!--Needs triangle icon-->
-                    <div class = "dropdown-content">
-                       <a href = "fiction.html">Fiction </a>
-                       <a href = "">Non-Fiction </a>
-                       <a href = "">DVDs </a>
-                       <a href = "">Comics </a>
-                       <a href = "">Magazine </a>
-                    </div>
-                </li>
-                <li><a href = "">BOOK CLUB</a></li>
-                <li><a href = "">SEARCH</a></li>
-                <li><a href = "">CART</a></li>
-                </ul>
-                <h1 class = "logo"><a href = ""> Hares and Hyenas</a></h1>
-        </nav>
+        <!-- Navigation Bar -->
+        <div id="topnav">
+            <a href="about.html">ABOUT US</a>
+
+            <div class="dropdown"> 
+                <button class="dropbtn"> COLLECTIONS 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fiction.html"> FICTION </a>
+                    <a href="#non-fiction"> NON-FICTION </a>
+                    <a href="#DVDs"> DVDs </a>
+                    <a href="#comics"> COMICS </a>
+                    <a href="#magazine"> MAGAZINES </a>
+                </div>
+            </div>
+            <!-- divide so that logo is centered within the nav bar -->
+            <a href ="/index.html" id="logo"> Hares and Hyenas</a></h1>
+            <!-- split to right side of nav bar-->
+            <a href="/cart.html" class="split-right"> CART <i class="fa fa-shopping-cart"></i></a>
+            <a href="#search" class="split-right"> SEARCH <i class="fa fa-search"></i></a>
+            <a href="#bookclub" class="split-right">BOOKCLUB</a>
+        </div>        
     </header>
     <main>
         <div class = "description">
