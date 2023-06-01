@@ -95,9 +95,8 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 }
-/* homepage books section*/
-.homepage-books, 
-.fiction-books{
+.fiction-books,
+.cart{
     background-color: var(--green);
     padding: 20px 0;
 }
@@ -341,21 +340,52 @@ input[type=text] {
     color: var(--green);    
     padding-bottom: 1vw;
 }
+.cart-container{
+display: grid;
+grid-template-rows: 2fr, 1fr, 1fr, 1fr, 1fr, 1fr
+gap: 12vw;
+}
 
 /* ---- CART ---- */ 
 .cart-book{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: calc(25% - 30px);
-    text-align:center;
+    text-align:left;
     margin-right: 20px;
-    vertical-align: auto;
-    padding-left: 1vw;
     padding: 15px;
     box-sizing: border-box;
     position: relative;
 }
+
+
+.cart-book img{
+    width: 13vw;
+    height: 19.76vw;
+    margin-bottom: 5px;
+    text-decoration: none!important;
+    border: 0 !important;
+    opacity: 1;
+    transition: 0.4s ease;
+}
+ 
+.cart-book h1{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-m);
+    color: var(--yellow);    
+    padding: 5vw;
+}
+.cart-book h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--font-size-s);
+    color: var(--yellow);    
+    padding: 2vw;
+}
+
 
 /*---- Responsive adjustments ---*/
 /* FOR DESKTOP*/
