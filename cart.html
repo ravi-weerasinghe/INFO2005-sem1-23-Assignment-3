@@ -20,35 +20,16 @@
     
     </head>
 <body>
-    <header>
-        <!-- Navigation Bar -->
-        <div id="topnav">
-            <a href="about.html">ABOUT US</a>
-
-            <div class="dropdown"> 
-                <button class="dropbtn"> COLLECTIONS 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="fiction.html"> FICTION </a>
-                    <a href="#non-fiction"> NON-FICTION </a>
-                    <a href="#DVDs"> DVDs </a>
-                    <a href="#comics"> COMICS </a>
-                    <a href="#magazine"> MAGAZINES </a>
-                </div>
-            </div>
-            <!-- divide so that logo is centered within the nav bar -->
-            <a href ="/index.html" id="logo"> Hares and Hyenas</a></h1>
-            <!-- split to right side of nav bar-->
-            <a href="/cart.html" class="split-right"> CART <i class="fa fa-shopping-cart"></i></a>
-            <a href="#search" class="split-right"> SEARCH <i class="fa fa-search"></i></a>
-            <a href="#bookclub" class="split-right">BOOKCLUB</a>
-        </div>        
-    </header>
+    <!--
+        Put head back here 
+    -->
+            
     <main>
+        <!--
         <div class = "description">
         <h1> Your Cart </h1>
         </div>
+        
         <button> Wait, I'm not done shopping</button>
         <ul>
             <li>Product</li>
@@ -56,17 +37,39 @@
             <li>Price</li>
             <li>Total</li>
         </ul>
-    <section class = "cart">
+        -->
+
+    <section class="cart-main">
         <div class = "cart-container">
-        <div class = "cart-book">
-            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-            <h1> The Leather Daddy and The Femme </h1>
-            <h2> author name </h2>
-            <h3> 1 </h3>
-            <h4> $00.00 </h4>
-            <h4> $00.00 </h4>
-            <button> remove </button>
+            <!--Image-->
+            <div class = "cart-item crt-img">
+                <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+            </div>
+            <!--Book title and author name-->
+            <div class="cart-item crt-title">
+                <h1> The Leather Daddy and The Femme </h1>
+                <br>
+                <h2> Carol Queen </h2>
+            </div>
+            <!--remove buttone-->
+            <div class="cart-item crt-button">
+                <button> Remove </button>
+            </div>
+            <!--quanitity-->
+            <div class="cart-item crt-quantity">
+                <h3> 1 </h3>
+            </div>
+            <!--price-->
+            <div class="cart-item crt-price">
+                <h4> $00.00 </h4>
+            </div>
+            <!--total-->
+            <div class="cart-item crt-total">
+                <h4> $00.00 </h4>
+            </div>
         </div>
+        
+    <!--
         <div class = "cart-book">
             <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
             <h1> The Leather Daddy and The Femme </h1>
@@ -108,16 +111,33 @@
             <button>Update Cart</button>
             <button>Proceed to Checkout</button>
         </div>
+        -->
         <!-- include paypal and mastercard icons-->
-    </div>
+    </section>
     </main>
     <footer>
-        <p> Stay Safe, Stay Sane, Stay Safe, Stay Strong, Stay Sexy</p>
-        <h1 class = "logo"> Hares and Hyenas</h1>
-        <h3> @ The Victorian Pride Centre</h3>
-        <h4> 10am to 6pm - Monday to Saturday, 11:30am to 5:00pm - Sunday</h4>
-        <img src ="">
-        <!--add fb, twitter, ig icons-->
+        <!-------------FOOTER------------------------------------------------------>
+        <p id="footer-tagline"> Stay Safe, Stay Sane, Stay Strong, Stay Sexy</p>
+
+        <div class="row">
+            <div class="footer f-text">
+                <h1> Hares and Hyenas </h1> <br>
+                <h2> @ The Victorian Pride Center</h2>
+                <h3> 10am to 6:00pm — Monday to Saturday <br> 11.30am to 5:00pm —  Sunday </h3>
+            </div>
+            <div class="footer f-icons"> 
+                <a href="https://www.facebook.com/HaresHyenas/" target="_blank"> <img src="other_assetts/Icon awesome-facebook-square.png"></a>
+                <a href="https://twitter.com/hares_hyenas" target="_blank"> <img src="other_assetts/Icon awesome-twitter-square.png"></a>
+                <a href="https://www.instagram.com/hareshyenas/" target="_blank"> <img src="other_assetts/Icon awesome-instagram.png"></a>
+            </div>
+
+            <div class="footer fimg">
+                <img src="other_assetts/hares_icon.png" width="80vw">
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
+
