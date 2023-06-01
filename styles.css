@@ -241,7 +241,7 @@ input[type=text] {
     align-items: center;
     justify-content: center;
     height: 15vh;
-    padding: 50px;
+    padding: 40px;
 }
 
 .description>h1{
@@ -427,6 +427,22 @@ input[type=text] {
     grid-column: 5;
     align-self: center;
     font-weight: bold;
+}
+
+.cart-page-button>button{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    outline: none;
+    margin-bottom: 10px;
+}
+.cart-page-button>button>i{
+    padding:3px;
 }
 
 
