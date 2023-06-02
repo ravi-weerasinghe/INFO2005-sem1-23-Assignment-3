@@ -53,25 +53,7 @@
     margin-bottom:2px;
     text-decoration: none!important;
 }
-.book > button{
-    font-family: "lemon-sans-next", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    border-radius: 20px;
-    background-color: var(--orange);
-    color: white;
-    text-align: center;
-    font-size: var(--font-size-xs);
-    outline: none;
-    margin-bottom: 10px;
-}
-.book >button:hover{
-    background-color: var(--darkorange);
-}
-.book >button:active{
-    background-color: var(--darkorange);
-    transform: scale(0.95);
-}
+
 .book{
     display: flex;
     flex-direction: column;
@@ -160,24 +142,6 @@
     color: var(--green);
     padding-bottom: 20px;
 }
-.homepage-subscribe-container .subcribe-text> button{
-    font-family: "lemon-sans-next", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    border-radius: 20px;
-    background-color: var(--green);
-    color: white;
-    text-align: center;
-    font-size: var(--font-size-s);
-    outline: none;
-    margin-bottom: 10px;
-}
-.homepage-subscribe-container .subcribe-text> button:hover {
-    background-color: var(--green-hover);
-
-}
-
-
 .homepage-subscribe-container .subcribe-text> form{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
