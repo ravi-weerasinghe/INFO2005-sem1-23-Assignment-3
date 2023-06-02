@@ -95,8 +95,8 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 }
-.fiction-books,
-.cart{
+.homepage-books,
+.fiction-books{
     background-color: var(--green);
     padding: 20px 0;
 }
@@ -342,6 +342,7 @@ input[type=text]  {
 }
 
 /* ------ CART ---------------- */
+
 .cart-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
@@ -429,21 +430,55 @@ input[type=text]  {
     font-weight: bold;
 }
 
-.cart-page-button>button{
+.cart-page-button>a>button{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
     border-radius: 20px;
-    background-color: var(--orange);
+    background-color: var(--green);
     color: white;
     text-align: center;
     font-size: var(--font-size-xs);
     outline: none;
     margin-bottom: 10px;
+    margin-left: 30px;
 }
-.cart-page-button>button>i{
+.cart-page-button>a>button>i{
     padding:3px;
 }
+/*-----CART PAGE TITLES ----------------------------*/
+.cart-titles-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.cart-titles{
+    align-self: flex-end; 
+    font-size: 1.2vw;  
+    font-family: "lemon-sans-next", sans-serif;
+    color: rgb(62, 62, 62);
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+
+}
+
+.cart-title-product{
+    text-align: center;
+    grid-column: 1;
+}
+.cart-title-quantity{
+    text-align: right;
+    grid-column: 6;
+}
+.cart-title-price{
+    text-align: center;
+    grid-column: 7/9;
+
+}
+.cart-title-total{
+    text-align: center;
+    grid-column: 9;
+}
+
 
 /*-----ORDER items----*/
 .orderitems {
