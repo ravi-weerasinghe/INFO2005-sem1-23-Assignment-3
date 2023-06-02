@@ -10,3 +10,4 @@ function scrollFunction() {
     document.getElementById("logo").style.fontSize = "6vw";
   }
 }
+
