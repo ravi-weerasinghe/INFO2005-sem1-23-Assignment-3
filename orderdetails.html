@@ -50,93 +50,128 @@
         <h1> Order Details</h1>
         </div>
         <button>Back</button>
-    <section class = "orderitems">
-        <div class = "orderitems-container">
-        <div>
-            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-            <h4> book name </h4>
-            <h4> author name </h4>
-            <h4> 1 </h4>
-        </div>
-        <div>
-            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-            <h4> book name </h4>
-            <h4> author name </h4>
-            <h4> 1 </h4>
-            <h4> $00.00 </h4>
-        </div>
-        <div>
-            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-            <h4> book name </h4>
-            <h4> author name </h4>
-            <h4> 1 </h4>
-        </div>
-        <div>
-            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-            <h4> book name </h4>
-            <h4> author name </h4>
-            <h4> 1 </h4>
-        </div>
-        <div>
-            <h4>Subtotal: $00.00</h4>
-            <h4>Shipping: $00.00</h4>
-            <h4>Total: $00.00</h4>
-        </div>
-        </div>
-    </section>
-    <section class = "orderdetails"> 
+<div class = "order">  
+    <div class = "orderdetails"> 
         <div class = "orderdetails-container">
             <form>
                 <h2>Contact Information:</h2>
-                <label for="email">Email</label>
-                <input type ="email" id="email" name = "email" required>
+
+                <label for="email"></label>
+                <input type ="email" id="email" name = "email"  placeholder = "Email Address" required>
+                
                 <input type ="checkbox" id= "news-offers"name = "news-offers">
                 <label for = "news-offers">Email me with news and offers</label>
 
-                <h2>Delivery Method</h2>
+                <h2>Delivery Method:</h2>
                 <input type ="checkbox" id="ship" name = "delivery-method">
                 <label for ="ship">Ship to address</label>
                 <input type ="checkbox" id="pickup" name = "delivery-method">
                 <label for = "pickup">Pick up instore</label>
 
-                <h2>Shipping Details</h2>
-                <label for="country-region">Country/Region</label>
-                <input type ="text" id="country-region" name = "country-region" required>
-                <label for="first-name">First name</label>
-                <input type ="text" id="first-name" name="first-name" required>
-                <label for="last-name">Last name</label>
-                <input type ="text" id="last-name" name="last-name" required>
-                <label for = "company">Company (optional)</label>
-                <input type= "text" id="company" name="company">
-                <label for ="address">Address</label>
-                <input type="text" id="address" name="address" required>
-                <label for="apt-number">Apartment,suite,etc (optional)</label>
-                <input type="text" id="apt-number" name="apt-number">
-                <label for="city">City</label>
-                <input type ="text" id="city" name="city" required>
-                <label for = "state">State/Territory</label>
-                <input type ="text" id="state" name="state" required>
-                <label for ="postcode">Postcode</label>
-                <input type="text" id="postcode" name="postcode" required>
-                <label for="phone-number">Phone Number</label>
-                <input type ="tel" id="phone-number" name="phone-number">
+                <h2>Shipping Details:</h2>
+                <label for="country-region"></label>
+                <input type ="text" id="country-region" name = "country-region" placeholder="Country/Region" required>
+                
+                <label for="first-name"></label>
+                <input type ="text" id="first-name" name="first-name" placeholder = "First name"required>
+                
+                <label for="last-name"></label>
+                <input type ="text" id="last-name" name="last-name" placeholder = "Last name"required>
+                
+                <label for = "company"></label>
+                <input type= "text" id="company" name="company" placeholder="Company (optional)">
+                
+                <label for ="address"></label>
+                <input type="text" id="address" name="address"  placeholder = "Address" required>
+                
+                <label for="apt-number"></label>
+                <input type="text" id="apt-number" name="apt-number" placeholder="Apartment,suite,etc (optional)">
+                
+                <label for="city"></label>
+                <input type ="text" id="city" name="city" placeholder="City" required>
+
+                <label for = "state"></label>
+                <input type ="text" id="state" name="state" placeholder = "State/Territory" required>
+                
+                <label for ="postcode"></label>
+                <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+                
+                <label for="phone-number"></label>
+                <input type ="tel" id="phone-number" name="phone-number" placeholder="Phone Number">
+                
                 <button type ="submit">Continue to Payment</button>
 
             </form>
         </div>
-
-    </section>
+    </div>
+    <div class = "orderitems">
+        <div class = "orderitems-container">
+        <div class = "order-item">
+            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+          <div class = "book-details">    
+            <h1> book name </h1>
+            <h2> author name </h2>
+            <h3> $00.00 </h3>
+          </div> 
+        </div>
+        <div class = "order-item">
+            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+          <div class = "book-details">   
+            <h1> book name </h1>
+            <h2> author name </h2>
+            <h3> $00.00 </h3>
+          </div> 
+        </div>
+        <div class = "order-item">
+            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+          <div class = "book-details">    
+            <h1> book name </h1>
+            <h2> author name </h2>
+            <h3> $00.00 </h3>
+          </div> 
+        </div>
+        <div class = "order-item">
+            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+          <div class = "book-details">   
+            <h1> book name </h1>
+            <h2> author name </h2>
+            <h3> $00.00 </h3>
+          </div> 
+        </div>
+        <div class = "order-summary">
+            <h4>Subtotal: $00.00</h4>
+            <h4>Shipping: $00.00</h4>
+            <h4>Total: $00.00</h4>
+        </div>
+        </div>
+    </div>
+</div>  
     <div>
         <!-- include paypal and mastercard icons-->
     </div>
     </main>
     <footer>
-        <p> Stay Safe, Stay Sane, Stay Safe, Stay Strong, Stay Sexy</p>
-        <h1 class = "logo"> Hares and Hyenas</h1>
-        <h3> @ The Victorian Pride Centre</h3>
-        <h4> 10am to 6pm - Monday to Saturday, 11:30am to 5:00pm - Sunday</h4>
-        <img src ="">
-        <!--add fb, twitter, ig icons-->
+        <!-------------FOOTER------------------------------------------------------>
+        <p id="footer-tagline"> Stay Safe, Stay Sane, Stay Strong, Stay Sexy</p>
+
+        <div class="row">
+            <div class="footer f-text">
+                <h1> Hares and Hyenas </h1> <br>
+                <h2> @ The Victorian Pride Center</h2>
+                <h3> 10am to 6:00pm — Monday to Saturday <br> 11.30am to 5:00pm —  Sunday </h3>
+            </div>
+            <div class="footer f-icons"> 
+                <a href="https://www.facebook.com/HaresHyenas/" target="_blank"> <img src="other_assetts/Icon awesome-facebook-square.png"></a>
+                <a href="https://twitter.com/hares_hyenas" target="_blank"> <img src="other_assetts/Icon awesome-twitter-square.png"></a>
+                <a href="https://www.instagram.com/hareshyenas/" target="_blank"> <img src="other_assetts/Icon awesome-instagram.png"></a>
+            </div>
+
+            <div class="footer fimg">
+                <img src="other_assetts/hares_icon.png" width="80vw">
+            </div>
+
+        </div>
+
     </footer>
 
 </body>

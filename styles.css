@@ -187,7 +187,7 @@
     padding-bottom: 30px;
 }
 /* subcribe text fields */
-input[type=text] {
+input[type=text]  {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -445,7 +445,86 @@ input[type=text] {
     padding:3px;
 }
 
+/*-----ORDER items----*/
+.orderitems {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--green);
+}
 
+.orderitems-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2vw;
+    justify-content: space-around;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-item img{
+    width: 15vw;
+    height: auto;
+    margin-right: 10px;
+}
+
+.book-details{
+    display: flex;
+    flex-direction: row;
+}
+
+/*--- ORDER DETAILS --*/
+.orderdetails {
+    display: flex;
+}
+
+.orderdetails-container {
+    float: left;
+    padding: 20px;
+}
+
+.orderdetails-container h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--red);
+    padding: 8px;
+}
+
+.orderdetails-container label{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--green);
+}
+input[type=text] , input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+    border: 2px  solid var(--green);
+    border-radius: 20px;
+    font-family: "lemon-sans-next", sans-serif; 
+  }
+.orderdetails-container form{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-bottom: 30px;
+}
+
+.order{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /*---- Responsive adjustments ---*/
 /* FOR DESKTOP*/
