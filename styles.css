@@ -447,39 +447,95 @@ input[type=text]  {
     padding:3px;
 }
 /*-----CART PAGE TITLES ----------------------------*/
-.cart-titles-container{
+.cart-titles-container,
+.cart-elements-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
-.cart-titles{
+.cart-titles,
+.cart-elements{
     align-self: flex-end; 
     font-size: 1.2vw;  
     font-family: "lemon-sans-next", sans-serif;
     color: rgb(62, 62, 62);
     padding-top: 2vw;
     padding-bottom: 1vw;
-
 }
-
 .cart-title-product{
     text-align: center;
     grid-column: 1;
 }
 .cart-title-quantity{
-    text-align: right;
-    grid-column: 6;
+    text-align: left;
+    grid-column: 9;
 }
 .cart-title-price{
-    text-align: center;
-    grid-column: 7/9;
+    text-align: left;
+    grid-column: 10;
+    padding-left: 2vw;
 
 }
 .cart-title-total{
-    text-align: center;
-    grid-column: 9;
+    text-align: left;
+    grid-column: 12;
 }
 
+/*-------CART ELEMENTS BOTTOM -------------------------------------------------*/
+.cart-element-discountcode{
+    text-align: center;
+    grid-column: 2;
+}
+.cart-element-form{
+    grid-column: 3;
+}
+.cart-element-form>form{
+    font-size: 0.5vw;
+    color: var(--green);
+}
+.cart-element-apply{
+    grid-column: 4;
+}
+.cart-element-subtotal{
+    text-align: right;
+    grid-column: 10;
+    padding-right: 2vw;
+    color: var(--darkorange);
+}
+.cart-element-total{
+    font-size: 1.5vw;
+    font-weight: bold;
+    grid-column: 11;
+    color: var(--darkorange);
+}
+.cart-element-tax-text{
+    grid-column:10;
+    font-size: 0.8vw;
+    text-align: center;
+}
 
+input[type=discount-text]  {
+    width: 90%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px  solid var(--green);
+    border-radius: 20px;
+    font-family: "lemon-sans-next", sans-serif; 
+  }
+  input[type=discount-text]:focus {
+    background-color: rgb(136, 205, 191);
+  }
+
+.cart-elements-buttons{
+    text-align: right;
+    margin-right: 5vw;
+    padding:2vw;
+}
+.cart-elements-buttons>p{
+    color: var(--red);
+    font-size: 0.8vw;
+    font-family: "lemon-sans-next", sans-serif;
+    padding-bottom: 2.2vw; 
+}
 /*-----ORDER items----*/
 .orderitems {
     display: flex;

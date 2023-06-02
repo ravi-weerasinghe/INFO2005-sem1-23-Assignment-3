@@ -1,0 +1,43 @@
+.button{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    outline: none;
+    margin-bottom: 10px;
+}
+.button>i{
+    padding-right:5px;
+    padding-left:5px;
+}
+.btn-green{
+    background-color: var(--green);
+}
+.btn-green:hover{
+    background-color: var(--green-hover);
+}
+
+.btn-white{
+    color: var(--green);
+    background-color: white;
+    border: solid 2px var(--green);
+}
+.btn-white:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+.btn-orange{
+    background-color: var(--orange);
+}
+.btn-orange:hover{
+    background-color: var(--orange-hover);
+}
+
+.btn-small{
+    font-size: var(--font-size-xs);
+}
+.btn-big{
+    font-size: var(--font-size-s);
+}
