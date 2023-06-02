@@ -63,12 +63,18 @@
                 <label for = "news-offers">Email me with news and offers</label>
 
                 <h2>Delivery Method:</h2>
+
+                <label class ="delivery" for ="ship">
                 <input type ="checkbox" id="ship" name = "delivery-method">
-                <label for ="ship">Ship to address</label>
+                Ship to address
+                </label>
+                <label class ="delivery" for = "pickup">
                 <input type ="checkbox" id="pickup" name = "delivery-method">
-                <label for = "pickup">Pick up instore</label>
+                Pick up Instore
+                </label>
 
                 <h2>Shipping Details:</h2>
+
                 <label for="country-region"></label>
                 <input type ="text" id="country-region" name = "country-region" placeholder="Country/Region" required>
                 
@@ -99,7 +105,7 @@
                 <label for="phone-number"></label>
                 <input type ="tel" id="phone-number" name="phone-number" placeholder="Phone Number">
                 
-                <button type ="submit">Continue to Payment</button>
+               <a href ="orderconfirmation.html"><button type ="submit">Continue to Payment</button></a>
 
             </form>
         </div>
@@ -109,40 +115,48 @@
         <div class = "order-item">
             <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
           <div class = "book-details">    
+            <div>
             <h1> book name </h1>
             <h2> author name </h2>
+            </div>
             <h3> $00.00 </h3>
           </div> 
         </div>
         <div class = "order-item">
             <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
           <div class = "book-details">   
-            <h1> book name </h1>
-            <h2> author name </h2>
+            <div>
+                <h1> book name </h1>
+                <h2> author name </h2>
+            </div>
             <h3> $00.00 </h3>
           </div> 
         </div>
         <div class = "order-item">
             <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
           <div class = "book-details">    
-            <h1> book name </h1>
-            <h2> author name </h2>
+            <div>
+                <h1> book name </h1>
+                <h2> author name </h2>
+            </div>
             <h3> $00.00 </h3>
           </div> 
         </div>
         <div class = "order-item">
             <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
           <div class = "book-details">   
-            <h1> book name </h1>
-            <h2> author name </h2>
+            <div>
+                <h1> book name </h1>
+                <h2> author name </h2>
+            </div>
             <h3> $00.00 </h3>
           </div> 
         </div>
-        <div class = "order-summary">
+
             <h4>Subtotal: $00.00</h4>
             <h4>Shipping: $00.00</h4>
             <h4>Total: $00.00</h4>
-        </div>
+        
         </div>
     </div>
 </div>  
@@ -173,5 +187,5 @@
         </div>
 
     </footer>
-
+<script src ="order.js"></script>
 </body>
