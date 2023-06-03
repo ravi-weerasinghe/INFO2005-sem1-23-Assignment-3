@@ -1,13 +1,3 @@
-/* push homepage down so it can be seen 
-
-.homepage-intro-container{
-    padding-top: 150px;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-
-*/
-
 
 /*-- NAVIGATION BAR --*/
 #topnav {
@@ -33,6 +23,7 @@
     border-radius: 4px;
     font-family: "lemon-sans-next", sans-serif;
 }
+
 /* navbar responsive test 
 
 #topnav a.icon{
@@ -61,7 +52,6 @@
 */
 #topnav i{
     padding-left: 7px;
-
 }
 
 #topnav a:hover{
