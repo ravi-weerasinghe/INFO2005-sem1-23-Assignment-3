@@ -1,0 +1,99 @@
+/* ---- BOOK ELEMENTS----*/
+.book img{
+    width: 13vw;
+    height: 19.76vw;
+    margin-bottom: 5px;
+    text-decoration: none!important;
+    border: 0 !important;
+    opacity: 1;
+    transition: 0.4s ease;
+}
+.book img:hover{
+    opacity: 0.7;
+}
+.book>h2,
+.book> a > h2{
+    max-width: 13vw;
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--yellow);
+    margin-bottom: 2px;
+    text-decoration: none!important;
+}
+/* idk which of made the under line disappear and im scared to change it */
+.book>a:link,
+.book>a:visited,
+.book>a:hover,
+.book>a>h2:link,
+.book>a>h2:visited,
+.book>a>h2:hover{
+    text-decoration: none!important;
+    color: var(--yellow-hover);
+}
+
+
+.book > h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--font-size-xs);
+    color: var(--yellow);
+    margin-bottom: 2px;
+    text-decoration: none!important;
+}
+.book > h4{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--orange);
+    margin-bottom:2px;
+    text-decoration: none!important;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 30px);
+    text-align:center;
+    margin-right: 20px;
+    vertical-align: auto;
+    padding-left: 1vw;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+/*----------------------------------- BOOKS CONTAINER-------------------------------------------------*/
+.books-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.books-section{
+    background-color: var(--green);
+    padding: 20px 0;
+}
+.books-section > h2{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-xl);
+    letter-spacing: 1px;
+    color: var(--darkorange);    
+    margin-left:4vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.books-section > h2> a{
+    text-decoration: none;
+    color: var(--yellow); 
+}
+.books-section > h2> a:hover{
+    text-decoration: none;
+    color: var(--yellow-hover); 
+}

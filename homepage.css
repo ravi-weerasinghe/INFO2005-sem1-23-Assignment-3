@@ -1,0 +1,118 @@
+
+
+/*---------- SUBCRIBE-------------------------------------------------------------------*/
+
+.homepage-subscribe > h2{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-xxl);
+    letter-spacing: 1px;
+    color: var(--green);
+    margin-left:4vw;
+    padding-top: 2vw;
+}
+
+.homepage-subscribe-container{
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: auto auto;
+    gap:10px;
+    padding: 10px;
+}
+.subscribe-image>img{
+    padding-left: 4vw;
+    width: 40vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+.homepage-subscribe-container .subcribe-text{
+    text-align: none;
+    max-width: 30vw;
+    padding-top: 50px;
+}
+
+.homepage-subscribe-container .subcribe-text> p{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-bottom: 20px;
+}
+.homepage-subscribe-container .subcribe-text> form{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-bottom: 30px;
+}
+/* subcribe text fields */
+input[type=text]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+    border: 2px  solid var(--green);
+    border-radius: 20px;
+    font-family: "lemon-sans-next", sans-serif; 
+  }
+  input[type=text]:focus {
+    background-color: rgb(136, 205, 191);
+  }
+
+
+/* --------------------- CATERGORIES CONTAINER---------------------------------------------------------------------*/
+
+.homepage-category-container{
+    display: flex;
+    justify-content: center;
+
+}
+/*----------------------HOME PAGE INTRO ------------------------------------- */
+.homepage-intro-container{
+    display: flex;
+    height: 300px;
+    padding-top: 150px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.homepage-intro-container #intro-text{
+    max-width: 40vw;
+    padding: 2vw;
+    margin: 10vw;
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--red);
+    align-self: center
+}
+
+.homepage-intro-container #intro-image{
+    align-self: center;
+    padding:20px;
+}
+
+/*---- Responsive adjustments ---*/
+/* FOR DESKTOP*/
+@media (min-width: 768px){
+    .book{
+        width: calc (25% -30px);
+    }
+    .homepage-category-container .book{
+        width: calc (25%-30px);
+    }
+    .homepage-intro-container #intro-text{
+        max-width: 40vw;
+    }
+    
+    }
+    /*FOR MOBILE*/
+    @media (max-width: 767px){
+        .book{
+            width: calc (50%-20px);
+        }
+        }

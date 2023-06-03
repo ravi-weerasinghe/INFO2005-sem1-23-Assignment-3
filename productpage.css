@@ -1,0 +1,53 @@
+/* ---- PRODUCT PAGE TOP CONTAINER ----*/
+.single-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 15vw;
+}
+
+.single-product-img{
+    width: 40vw;
+    align-self: flex-start; 
+    margin-right: 8vw;
+}
+.single-product-container{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+.single-product-container h1{
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-l);
+    letter-spacing: 1px;
+    color: var(--green);    
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+.single-product-container h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: var(--font-size-s);
+    color: var(--yellow);    
+    padding-bottom: 1vw;
+}
+.single-product-container h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--orange);    
+    padding-bottom: 1vw;
+}
+.single-product-container p{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--green);    
+    padding-bottom: 1vw;
+}
