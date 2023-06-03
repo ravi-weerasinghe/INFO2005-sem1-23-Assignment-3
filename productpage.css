@@ -7,7 +7,7 @@
     padding: 15vw;
 }
 
-.single-product-img{
+.single-product img{
     width: 40vw;
     align-self: flex-start; 
     margin-right: 8vw;
@@ -47,7 +47,40 @@
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s);
     color: var(--green);    
     padding-bottom: 1vw;
+}
+
+/*-- RESPONSIVE ADJUSTMENTS -- */
+@media screen and (max-width: 768px){
+.single-product{
+    flex-direction: column;
+    text-align: flex-start;
+    padding: 10vw;
+    height: auto;
+}
+.single-product img{
+    align-self: flex-start;
+    width: 40vw;
+    margin-right: 0;
+    margin-bottom: 4vw;
+}
+.single-product-container{
+    align-items: center;
+}
+.single-product-container p{
+    width: 70vw;
+    font-size: var(--font-size-m);
+}
+.single-product-container h1{
+    max-width: 80vw;
+    font-size: var(--font-size-xxl);
+}
+.single-product-container h2{
+    font-size: var(--font-size-m);
+}
+.single-product-container h3{
+    font-size: var(--font-size-m);
+}
 }

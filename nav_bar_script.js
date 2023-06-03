@@ -11,3 +11,11 @@ function scrollFunction() {
   }
 }
 
+function toggleMenu(){
+  var nav = document.getElementById("topnav");
+  if(nav.className=== ""){
+    nav.className = "responsive";
+  } else {
+    nav.className = "";
+  }
+}

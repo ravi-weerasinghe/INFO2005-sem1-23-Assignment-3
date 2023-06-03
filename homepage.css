@@ -61,6 +61,32 @@ input[type=text]  {
   input[type=text]:focus {
     background-color: rgb(136, 205, 191);
   }
+  /*---- Responsive adjustments ---*/
+@media screen and (max-width: 768px){
+    .homepage-subscribe > h2{
+        text-align: center;
+    }
+
+    .subscribe-image img{
+        display: none;
+    }
+
+    .homepage-subscribe-container{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .homepage-subscribe-container .subcribe-text{
+        text-align: center;
+        max-width: 75vw;
+    }
+    .homepage-subscribe-container .subcribe-text> p{
+            font-size: var(--font-size-m); 
+        }
+        .homepage-subscribe-container .subcribe-text> form{
+            font-size: var(--font-size-m);
+        }
+}
 
 
 /* --------------------- CATERGORIES CONTAINER---------------------------------------------------------------------*/
@@ -97,22 +123,11 @@ input[type=text]  {
 }
 
 /*---- Responsive adjustments ---*/
-/* FOR DESKTOP*/
-@media (min-width: 768px){
-    .book{
-        width: calc (25% -30px);
-    }
-    .homepage-category-container .book{
-        width: calc (25%-30px);
-    }
+@media screen and (max-width: 768px){
     .homepage-intro-container #intro-text{
-        max-width: 40vw;
+        font-size: var(--font-size-m);
     }
-    
+    .homepage-intro-container #intro-image{
+        padding: 0%;
     }
-    /*FOR MOBILE*/
-    @media (max-width: 767px){
-        .book{
-            width: calc (50%-20px);
-        }
-        }
+}
