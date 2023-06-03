@@ -180,6 +180,8 @@ input[type=discount-text]  {
 .cart-elements-buttons>img{
     width:2vw; 
 }
+
+
 /*-----ORDER items----*/
 .orderitems {
     display: flex;
@@ -249,12 +251,17 @@ input[type=discount-text]  {
 
 .orderdetails {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.cart-page-button,
+.cart-page-button{
+    padding: 20px;
+    margin-left:1.1vw;
+}
 .orderdetails-container {
     padding: 20px;
     margin-left:1.1vw;
+    flex: 1 1 50%;
 }
 
 .orderdetails-container h2{
@@ -274,7 +281,10 @@ input[type=discount-text]  {
     font-size: var(--font-size-xs);
     color: var(--green);
 }
-input[type=text] , input[type=email], input[type=tel],input[type=number] {
+input[type=text] , 
+input[type=email],
+input[type=tel],
+input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -320,6 +330,36 @@ input[type=submit] {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 768px){
+    .orderdetails{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .orderdetails-container{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .orderdetails-container h2{
+        font-size: var(--font-size-l);
+    }
+    .orderdetails-container label{
+        font-size: var(--font-size-m);
+    }
+    .orderitems{
+        display: none;
+    }
+
+    .order{
+        display: flex;
+    }
+    
+    .delivery{
+        width: 100%;
+    }
+}
+
 /*-- Order Confirmation --*/ 
 .orderconfirmation {
     display: flex;
