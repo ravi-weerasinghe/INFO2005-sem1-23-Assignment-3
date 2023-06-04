@@ -280,6 +280,7 @@ input[type=discount-text]  {
     font-style: normal;
     font-size: var(--font-size-xs);
     color: var(--green);
+    padding: 15px;
 }
 input[type=text] , 
 input[type=email],
@@ -316,9 +317,10 @@ input[type=submit] {
     color: var(--green);
     padding-bottom: 30px;
 }
-.delivery {
+.delivery,
+.payment {
     align-content: center;
-    width:fit-content;
+    width: fit-content;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing:border-box;
@@ -353,11 +355,14 @@ input[type=submit] {
 
     .order{
         display: flex;
+        justify-content: center;
     }
     
-    .delivery{
+    .delivery,
+    .payment{
         width: 100%;
     }
+    
 }
 
 /*-- Order Confirmation --*/ 
@@ -368,4 +373,121 @@ input[type=submit] {
 .orderconfirmation-container{
     float: left;
     padding: 20px;
+}
+
+.orderconfirmation-container-intro{
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+}
+.orderconfirmation-container-intro img{
+    width: 10vw;
+    align: center;
+}
+.orderconfirmation-container-intro h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    opacity: 60%;
+    padding-top: 3vw;
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+.orderconfirmation-container-intro h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-left: 2vw;
+}
+ 
+.orderconfirmation-container-location{
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+.orderconfirmation-container-location h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+.orderconfirmation-container-location h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-left: 2vw;
+}
+.orderconfirmation-container-location h4{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--green);
+    padding-left: 2vw;
+    padding-top: 3vw;
+}
+
+.orderconfirmation-container-inform {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+.orderconfirmation-container-inform h2{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+
+.orderconfirmation-container-inform h3{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-s);
+    color: var(--green);
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+
+.orderconfirmation-container-inform h4{
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-xs);
+    color: var(--green);
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+}
+
+@media only screen and (max-width: 768px){
+    .orderconfirmation-container-intro h2,
+    .orderconfirmation-container-intro h3,
+    .orderconfirmation-container-location h2,
+    .orderconfirmation-container-location h3,
+    .orderconfirmation-container-inform h2,
+    .orderconfirmation-container-inform h3{
+        font-size: var(--font-size-l);
+    }
+
+    .orderconfirmation-container-inform h4,
+    .orderconfirmation-container-location h4{
+        font-size: var(--font-size-m);
+    }
+    .orderconfirmation-container-intro img{
+        display: none;
+}
 }
