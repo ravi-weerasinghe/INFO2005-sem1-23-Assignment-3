@@ -184,6 +184,20 @@
     font-size: var(--font-size-xs);
 }
 
+.ftr-green{
+    color: var(--green);
+}
+.ftr-orange{
+    color: var(--orange);
+}
+.ftr-drkorange{
+    color: var(--darkorange);
+}
+.ftr-red{
+    color: var(--red);
+}
+
+
 .row{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;

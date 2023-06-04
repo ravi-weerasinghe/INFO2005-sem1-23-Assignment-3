@@ -3,12 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 35vh;
     padding: 15vw;
 }
 
-.single-product img{
-    width: 40vw;
+.single-product-image>img{
+    width: 20vw;
     align-self: flex-start; 
     margin-right: 8vw;
 }
@@ -17,7 +17,7 @@
     display: flex;
     align-items: flex-start;
 }
-.single-product-container h1{
+.single-product-container>h1{
     font-family: "dharma-gothic-c", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -27,7 +27,7 @@
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
 }
-.single-product-container h2{
+.single-product-container>h2{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -35,7 +35,7 @@
     color: var(--yellow);    
     padding-bottom: 1vw;
 }
-.single-product-container h3{
+.single-product-container>h3{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -47,11 +47,14 @@
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
     color: var(--green);    
     padding-bottom: 1vw;
 }
-
+.back-button-product-page{
+    padding-top: 2vw;
+    text-align: center;
+}
 /*-- RESPONSIVE ADJUSTMENTS -- */
 @media screen and (max-width: 768px){
 .single-product{

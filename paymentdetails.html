@@ -57,10 +57,11 @@
         <div class = "description">
         <h1> Payment Details</h1>
         </div>
-        <button>Back</button>
+        
  <div class = "order"> 
     <div class = "orderdetails"> 
         <div class = "orderdetails-container">
+            <a href="orderdetails.html"><button class="button btn-green btn-small"><i class="fa fa-caret-left"></i>Back</button></a>
             <form>
                 <h2>Payment Address:</h2>
                 <label for ="address"></label>
@@ -68,7 +69,8 @@
                 
                 <input type ="checkbox" id= "shipping-address"name = "shipping-address">
                 <label for = "shipping-address">Same as Shipping Address</label>
-
+            </form>
+            <form>
                 <h2>Payment Method:</h2>
                 <label class ="payment" for ="paypal">
                     <input type ="checkbox" id="paypal" name = "pay-method">
@@ -78,7 +80,8 @@
                     <input type ="checkbox" id="card" name = "pay-method">
                     Card
                     </label>
-
+            </form>
+            <form>
                 <h2>Card Details:</h2>
 
                 <label for="card-name"></label>
@@ -92,70 +95,91 @@
   
                 <label for="cvv"></label>
                 <input type="text" id="cvv" name="cvv" placeholder="CVV (3 digits)">
-
-                
-                <button type ="submit">Confirm Payment</button>
             </form>
+
+            <a href="orderconfirmation.html"><button class="button btn-green btn-big">Confirm!<i class="fa fa-caret-right"></i></button></a>
         </div>  
     </div>   
     <div class = "orderitems">
         <div class = "orderitems-container">
+
             <div class = "order-item">
-                <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
-              <div class = "book-details">    
-                <div>
-                <h1> The Leather Daddy and the Femme </h1>
-                <h2> Carol Queen </h2>
-                </div>
-                <h3> $26.95 </h3>
-              </div> 
+                    <div class="order-item-image">
+                        <a href="#">
+                            <span class="number-badge">2</span>
+                            <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
+                        </a>
+                    </div>
+                    <div>
+                        <h1> The Leather Daddy and the Femme </h1>
+                        <h2> Carol Queen </h2>
+                    </div>   
+                    <div>
+                        <h3> $53.90 </h3>
+                    </div>
             </div>
             <div class = "order-item">
-                <img src="book_covers/pretendItsMyBody.jpg">
-              <div class = "book-details">   
-                <div>
-                    <h1> Pretend It's My Body - Stories</h1>
-                    <h2> Luke Dani Blue</h2>
+                <div class="order-item-image">
+                    <a href="#">
+                        <span class="number-badge">1</span>
+                        <img src= "book_covers/pretendItsMyBody.jpg" alt="Leather">
+                    </a>
                 </div>
-                <h3> $32.99 </h3>
-              </div> 
+                <div>
+                    <h1> Pretend It's My Body - Stories </h1>
+                    <h2> Luke Dani Blue </h2>
+                </div>   
+                <div>
+                    <h3> $32.99 </h3>
+                </div>
             </div>
             <div class = "order-item">
-                <img src= "book_covers/greekLove.jpg" >
-              <div class = "book-details">    
+                <div class="order-item-image">
+                    <a href="#">
+                        <span class="number-badge">1</span>
+                        <img src= "book_covers/greekLove.jpg" alt="Greek Love">
+                    </a>
+                </div>
                 <div>
                     <h1> Geek Love </h1>
                     <h2> Katherine Dunn </h2>
+                </div>   
+                <div>
+                    <h3> $22.99 </h3>
                 </div>
-                <h3> $22.99 </h3>
-              </div> 
             </div>
             <div class = "order-item">
-                <img src= "book_covers/apocalypseBaby.jpg">
-              <div class = "book-details">   
+                <div class="order-item-image">
+                    <a href="#">
+                        <span class="number-badge">1</span>
+                        <img src= "book_covers/apocalypseBaby.jpg" alt="Apocalypse Boy">
+                    </a>
+                </div>
                 <div>
                     <h1> Apocalypse Baby </h1>
                     <h2> Virginie Despentes </h2>
+                </div>   
+                <div>
+                    <h3> $26.95 </h3>
                 </div>
-                <h3> $26.95 </h3>
-              </div> 
             </div>
-    
-                <h4>Subtotal: <b>$109.79</b></h4>
+                <h4>Subtotal: <b>$136.83</b></h4>
                 <h4>Shipping: <b>$10.00</b></h4>
-                <h4>Total: <b>$119.79</b></h4>
+                <h4>Total: <b>$146.83</b></h4>
             </div>
         </div>
     </div>
    </div> 
-    <div>
-        <!-- include paypal and mastercard icons-->
-    </div>
     </main>
     <footer>
         <!-------------FOOTER------------------------------------------------------>
-        <p id="footer-tagline"> Stay Safe, Stay Sane, Stay Strong, Stay Sexy</p>
-
+        <p id="footer-tagline">
+            Stay<span class="ftr-green"> Safe</span>
+            , Stay<span class="ftr-orange"> Sane</span>
+            , Stay<span class="ftr-drkorange"> Strong</span>
+            , Stay<span class="ftr-red"> Sexy</span>
+        </p>
+        
         <div class="row">
             <div class="footer f-text">
                 <h1> Hares and Hyenas </h1> <br>

@@ -42,8 +42,22 @@
         </div>        
     </header>
     <main>
-        <section class="single-product">
-             <div>
+        <div class="bread-crumbs"> 
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i></a></li>
+                <li>|</li>
+                <li><a href="collections.html"> Collections</a></li>
+                <li>|</li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li>|</li>
+                <li><a href="queerfiction.html">Queer Fiction</a></li>
+                <li>|</li>
+                <li><a href="productpage.css">Leather Daddy and the Femme</a></li>
+            </ul>     
+        </div>
+
+        <div class="single-product">
+             <div class="single-product-image">
                 <img src= "book_covers/theLeatherDaddyandTheFemme.jpg" alt="Leather">
              </div>
             <div class="single-product-container">
@@ -57,9 +71,21 @@
                         <br><br>
                         Mistress of sexual storytelling Carol Queen offers a fresh look at sexual lifestyles and choices that are misinterpreted and repudiated by the mainstream. Her perceptive and knowledgeable treatment inserts a new viewpoint into the carefully developed relationships of power play, destroying stereotypes and modeling open communication.
                     </p>
-                    <button> ADD TO CART</button>
-                </div>
-        </section>
+                    <!--Button-->
+                    <button type="button" class="button btn-orange btn-small" href="#" onclick="show('cart_popup')"> ADD TO CART </button>
+                    <div class="cart_popup" id="cart_popup">
+                        <a href="#hide" onclick="hide('cart_popup')"> <i class="fa fa-close"></i></a>
+                        <!--Button Content-->
+                        <h1> <img src="other_assetts/green_checkmark.png" alt="A Day of Fallen Night"> <br>Success! </h1>
+                        <h2> Your item has been added to your cart</h2>
+                        <div class=cart-popup-link>
+                            <a href="#hide" onclick="hide('cart_popup')"> <button class="go_back"> CONTINUE BROWSING</button></a>
+                            <a href="cart.html"> <button> GO TO CART</button></a>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
 
         <section class ="books-section">
             <h2><a>You Might Like:</a></h2>
@@ -70,7 +96,7 @@
                         <h2> Behrouz Gets Lucky </h2></a> 
                         <h3> Avery Cassell </h3>
                         <h4> $28.99 </h4>
-                        <button> ADD TO CART </button>
+                        <button class="button btn-orange btn-small"> ADD TO CART </button>
             </div >
             <div class = "book"> 
                 <a href = "">
@@ -78,7 +104,7 @@
                     <h2> A New Tense </h2></a> 
                 <h3> Jo Day </h3>
                 <h4> $20.00 </h4>
-                <button> ADD TO CART </button>
+                <button class="button btn-orange btn-small"> ADD TO CART </button>
             </div>
             <div class = "book"> 
                 <a href = "">
@@ -86,7 +112,7 @@
                     <h2> Apocalypse Baby </h2></a> 
                 <h3> Virginie Despentes </h3>
                 <h4> $24.99 </h4>
-                <button> ADD TO CART </button>
+                <button class="button btn-orange btn-small"> ADD TO CART </button>
             </div>
             <div class = "book"> 
                 <a href = "">
@@ -94,15 +120,23 @@
                     <h2> But I Know What You Want: 25 Sex Tales for the Different </h2></a> 
                 <h3> James Williams </h3>
                 <h4> $24.99 </h4>
-                <button> ADD TO CART </button>
+                <button class="button btn-orange btn-small"> ADD TO CART </button>
             </div>
         </div>
         </section>
+        <div class="back-button-product-page">
+            <a href="queerfiction.html"><button class="button btn-green btn-big"><i class="fa fa-caret-left"></i>Back to Titles</button></a>
+        </div>
         
     </main>
     <footer>
         <!-------------FOOTER------------------------------------------------------>
-        <p id="footer-tagline"> Stay Safe, Stay Sane, Stay Strong, Stay Sexy</p>
+        <p id="footer-tagline">
+            Stay<span class="ftr-green"> Safe</span>
+            , Stay<span class="ftr-orange"> Sane</span>
+            , Stay<span class="ftr-drkorange"> Strong</span>
+            , Stay<span class="ftr-red"> Sexy</span>
+        </p>
 
         <div class="row">
             <div class="footer f-text">

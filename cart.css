@@ -1,11 +1,13 @@
 /* ------ CART ---------------- */
-
+.cart-page-button{
+    margin-left: 2vw;
+}
 .cart-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 20% auto 10% 10% 10% 10%;
     grid-template-rows: 9vw 9vw;
     background-color: var(--green);
-    
+    border-bottom: 3px solid var(--green-hover);
 }
 .cart-item{ 
     align-self: flex-end; 
@@ -91,11 +93,12 @@
 .cart-titles-container,
 .cart-elements-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 20% 40% 10% 10% 10% 10%;
 }
 .cart-titles,
 .cart-elements{
     align-self: flex-end; 
+    text-align: left;
     font-size: 1.2vw;  
     font-family: "lemon-sans-next", sans-serif;
     color: rgb(62, 62, 62);
@@ -107,45 +110,50 @@
     grid-column: 1;
 }
 .cart-title-quantity{
-    text-align: left;
-    grid-column: 9;
+    grid-column: 3;
 }
 .cart-title-price{
-    text-align: left;
-    grid-column: 10;
-    padding-left: 2vw;
-
+    grid-column: 4;
 }
 .cart-title-total{
-    text-align: left;
-    grid-column: 12;
+    grid-column: 5;
 }
 
 /*-------CART ELEMENTS BOTTOM -------------------------------------------------*/
 .cart-element-discountcode{
-    text-align: center;
-    grid-column: 2;
+    display:inline-block;
+    text-align: left;
+    grid-column: 1;
+    margin-left: 1vw;
+}
+span.dscnt-cde{
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    padding: 4px;
 }
 .cart-element-form{
-    grid-column: 3;
+    text-align: right;
+    grid-column: 2;
+    padding-right: 10px;
 }
 .cart-element-form>form{
     font-size: 0.5vw;
     color: var(--green);
 }
 .cart-element-apply{
-    grid-column: 4;
+    grid-column:3;
+
 }
 .cart-element-subtotal{
     text-align: right;
-    grid-column: 10;
+    grid-column: 4;
     padding-right: 2vw;
     color: var(--darkorange);
 }
 .cart-element-total{
     font-size: 1.5vw;
     font-weight: bold;
-    grid-column: 11;
+    grid-column: 5;
     color: var(--darkorange);
 }
 .cart-element-tax-text{
@@ -155,12 +163,13 @@
 }
 
 input[type=discount-text]  {
-    width: 90%;
+    width: 20%;
     padding: 10px 10px;
     box-sizing: border-box;
     border: 2px  solid var(--green);
     border-radius: 20px;
     font-family: "lemon-sans-next", sans-serif; 
+    font-size: var(--font-size-xs);
   }
   input[type=discount-text]:focus {
     background-color: rgb(136, 205, 191);
@@ -231,7 +240,9 @@ input[type=discount-text]  {
     padding-left: 3vw;
 }
 .order-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% auto 35%;
+    text-align: left;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -241,10 +252,23 @@ input[type=discount-text]  {
     height: auto;
     margin-right: 10px;
 }
-
-.book-details{
-    display: flex;
-    flex-direction: row;
+.order-item-image{
+    position:relative;
+    padding-top: 1.2vw;
+    display:inline-block;
+}
+.number-badge{
+    position: absolute;
+    right:-2.2vw;
+    top:0.2vw;
+    background: var(--darkorange);
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: var(--green);
+    padding:5px 10px;
+    font-family: "lemon-sans-next", sans-serif;
+    font-weight: bold;
+    font-size: var(--font-size-s);
 }
 
 /*--- ORDER DETAILS --*/
@@ -252,29 +276,29 @@ input[type=discount-text]  {
 .orderdetails {
     display: flex;
     flex-wrap: wrap;
+
 }
 
-.cart-page-button{
-    padding: 20px;
-    margin-left:1.1vw;
-}
 .orderdetails-container {
     padding: 20px;
     margin-left:1.1vw;
     flex: 1 1 50%;
 }
-
-.orderdetails-container h2{
+.orderdetails-container>form{
+    display:table;
+    width:100%;
+}
+.orderdetails-container>form>h2{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: var(--font-size-s);
     color: var(--red);
-    padding-bottom: 10px;
-    padding-top:5px;
+    padding-bottom: 1.2vw;
+    padding-top: 1.2;
 }
 
-.orderdetails-container label{
+.orderdetails-container>form>label{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -282,40 +306,29 @@ input[type=discount-text]  {
     color: var(--green);
     padding: 15px;
 }
+
 input[type=text] , 
 input[type=email],
 input[type=tel],
 input[type=number] {
-    width: 100%;
+    text-align: left;
+    display: inline-block;
+    width: 95%;
     padding: 12px 20px;
-    margin: 8px 0;
     box-sizing:border-box;
     border: 2px  solid var(--green);
     border-radius: 20px;
     font-family: "lemon-sans-next", sans-serif; 
   }
 
-/*might need this 
-input[type=submit] {
-    font-family: "lemon-sans-next", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    border-radius: 20px;
-    background-color: var(--green);
-    color: white ;
-    text-align: center;
-    outline: none;
-    margin-bottom: 10px;
-    margin-left: 40vw;
-}
-*/
-.orderdetails-container form{
+.orderdetails-container>form{
     font-family: "lemon-sans-next", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: var(--font-size-s);
     color: var(--green);
-    padding-bottom: 30px;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
 }
 .delivery,
 .payment {
@@ -327,7 +340,6 @@ input[type=submit] {
     border: 2px  solid var(--green);
     border-radius: 25px;
 }
-
 .order{
     display: grid;
     grid-template-columns: 1fr 1fr;
