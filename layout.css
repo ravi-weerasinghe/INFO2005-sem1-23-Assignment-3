@@ -172,7 +172,7 @@
     #topnav.responsive #navbar-items .dropdown-content{
         position: static;
     }
-} */
+} 
 
 
 /*-------------------Footer------------------------*/
@@ -318,13 +318,23 @@
     margin-top: 20px;  
     padding-bottom: 3vw;  
 }
-
+.about-information{
+    font-family: "lemon-sans-next", sans-serif;
+    letter-spacing: 1px;
+    color: var(--red);
+    font-size: var(--font-size-s);
+    margin: 20px 10vw 20vw;  
+}
 @media screen and (max-width: 768px){
    .description p{
     font-size: var(--font-size-m);
    }
+   .description h1{
+    font-size: var(--font-size-xxl);
+    padding-top: 30px;
+   }
    .description{
-    padding: 20px;
+    padding: 50px;
    }
    .bread-crumbs{
    margin-top: 15vw;
@@ -335,5 +345,4 @@
 .footer{
     height:70px;
 }
-
 }
