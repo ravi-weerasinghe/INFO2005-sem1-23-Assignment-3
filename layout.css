@@ -221,17 +221,17 @@
 
 .f-text>h1{
     font-family: "alta-california", sans-serif;
-    font-size: 4vw;
+    font-size: var(--font-size-l);
 }  
 
 .f-text>h2{
     font-weight: bold;
     font-family: "dharma-gothic-c", sans-serif;
-    font-size: 3.2vw;
+    font-size: var(--font-size-m);
 } 
 .f-text>h3{
     padding-top: 10px;
-    font-size: 1.3vw;
+    font-size: var(--font-size-s);
 } 
 /*-------------SOCIAL ICONS---------------------------------*/
 .f-icons{
@@ -323,5 +323,17 @@
    .description p{
     font-size: var(--font-size-m);
    }
+   .description{
+    padding: 20px;
+   }
+   .bread-crumbs{
+   margin-top: 15vw;
+}
+#footer-tagline{
+    font-size: 2vw;
+}
+.footer{
+    height:70px;
+}
 
 }
